@@ -9,9 +9,12 @@ def calculate_bmi(height, weight):
 
     if bmi<18.5:                                    #no need round bracket, different from C++
         print ("The user is Under Weight.")
+        return -1
     elif bmi <=25.0:
         print ("The user is Normal Weight.")
+        return 0
     else:
         print ("The suer is Over Weight.")
+        return 1
     
 calculate_bmi(weight=57, height=1.73)
